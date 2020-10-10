@@ -796,8 +796,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeDuration: 1
   displayImageDuration: 1
-  player: {fileID: 0}
-  exitBackgroundImageCanvasGroup: {fileID: 0}
+  player: {fileID: 3437972568694620188}
+  exitBackgroundImageCanvasGroup: {fileID: 996774727}
 --- !u!65 &1609153681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4219,3 +4219,9 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 7b2a9b6164ce2734095122b3b1538ec5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ffd82a77d347484398975108c348c2f, type: 3}
+--- !u!1 &3437972568694620188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3437972568989160650, guid: 6ffd82a77d347484398975108c348c2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3437972568694620187}
+  m_PrefabAsset: {fileID: 0}
