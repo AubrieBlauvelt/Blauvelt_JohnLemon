@@ -11,7 +11,7 @@ public class PlayerBonk : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.F) && enemyToBonk != null)
         {
-            enemyToBonk.GetComponent<WaypointPatrol>().Stun(); 
+            Destroy(enemyToBonk);
         }
     }
 

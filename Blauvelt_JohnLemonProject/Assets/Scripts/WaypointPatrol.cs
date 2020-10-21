@@ -28,7 +28,7 @@ public class WaypointPatrol : MonoBehaviour
             stunned = true;
             navMeshAgent.isStopped = true;
             pointOfViewObject.SetActive(false);
-            Invoke("ResumePatrol", 3f); //stops for 3 seconds
+            Invoke("ResumePatrol", .5f); //ignore this and come back to it. Trying out the idea to destroy.
         }
     }
 
