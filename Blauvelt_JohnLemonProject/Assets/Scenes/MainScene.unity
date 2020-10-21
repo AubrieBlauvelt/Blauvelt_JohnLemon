@@ -877,7 +877,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 170560, guid: cc5de5e674870ca479a40105f80555ad, type: 3}
       propertyPath: m_Name
-      value: key_gold
+      value: Doorkey
       objectReference: {fileID: 0}
     - target: {fileID: 462124, guid: cc5de5e674870ca479a40105f80555ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1229,6 +1229,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 4.21
   m_Center: {x: 0.45, y: 3.44, z: 0.14}
+--- !u!114 &811481278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811481275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23eef22bfc3d77346970f01dd81b81ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inTrigger: 0
 --- !u!1 &937371298
 GameObject:
   m_ObjectHideFlags: 0

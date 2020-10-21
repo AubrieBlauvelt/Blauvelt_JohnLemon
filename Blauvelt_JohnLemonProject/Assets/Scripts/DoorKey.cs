@@ -2,17 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyScript : MonoBehaviour
+public class DoorKey : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool inTrigger;
+
+    void OnTriggerEnter(Collider other)
     {
-        
+        inTrigger = true;
     }
 
-    // Update is called once per frame
+    void OnTriggerExit(Collider other)
+    {
+        inTrigger = false;
+    }
+
     void Update()
     {
-        
+        if (inTrigger)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                DoorScript.doorKey = true;
+                Destroy(this.gameObject);
+            }
+        }
+    }
+
+    void OnGUI() //instructs player how to obtain key
+    {
+        if (inTrigger)
+        {
+            GUI.Box(new Rect(0, 60, 200, 25), "Press E to take key");
+        }
     }
 }

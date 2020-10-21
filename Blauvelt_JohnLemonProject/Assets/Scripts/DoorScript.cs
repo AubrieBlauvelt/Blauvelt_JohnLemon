@@ -47,7 +47,7 @@ public class DoorScript : MonoBehaviour
         if (open)
         {
             var newRot = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0.0f, -90.0f, 0.0f), Time.deltaTime * 200);
-            transform.rotation = newRot;
+            transform.rotation = newRot; //tells door how much too rotate upon opening
         }
         else
         {
@@ -56,7 +56,7 @@ public class DoorScript : MonoBehaviour
         }
     }
 
-    void OnGUI()
+    void OnGUI() //gives player instructions on door controls
     {
         if (inTrigger)
         {
@@ -72,7 +72,7 @@ public class DoorScript : MonoBehaviour
                 }
                 else
                 {
-                    GUI.Box(new Rect(0, 0, 200, 25), "Need a key!");
+                    GUI.Box(new Rect(0, 0, 200, 25), "Need a key!"); //if player does not have key this will appear
                 }
             }
         }
