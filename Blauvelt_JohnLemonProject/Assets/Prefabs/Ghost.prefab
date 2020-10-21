@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 5199165819524063415}
   m_Layer: 0
   m_Name: Ghost
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -532,7 +532,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 5795185737816106581}
-  waypoints: []
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!82 &5199165819524063415
 AudioSource:
   m_ObjectHideFlags: 0

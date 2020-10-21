@@ -9,9 +9,9 @@ public class PlayerBonk : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && enemyToBonk != null)
+        if(Input.GetKeyDown(KeyCode.F) && enemyToBonk != null)
         {
-            Destroy(enemyToBonk);
+            enemyToBonk.GetComponent<WaypointPatrol>().Stun(); 
         }
     }
 
